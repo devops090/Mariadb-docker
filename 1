@@ -31,7 +31,6 @@ RUN systemctl enable mariadb
 #RUN mysql -e "flush privileges;"
 #CMD ["/usr/sbin/init"]
 #RUN ls -s /opt/start.sh
-#CMD ["/bin/bash", "start.sh"]
+CMD ["/bin/sleep", "100", "/bin/bash", "start.sh"]
 ENTRYPOINT ["/usr/sbin/init"]
 EXPOSE 3306
-CMD ["/bin/bash", "start.sh"]
