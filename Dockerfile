@@ -34,4 +34,4 @@ RUN systemctl enable mariadb
 #CMD ["/bin/bash", "start.sh"]
 ENTRYPOINT ["/usr/sbin/init"]
 EXPOSE 3306
-CMD ["/bin/bash", "start.sh"]
+CMD sh start.sh
